@@ -1,13 +1,36 @@
+.jumbotron {
+  text-align: center;
+  font-size: xxx-large;
+  font-weight: lighter;
+}
+
 .nav-link {
   font-size: x-large;
-  color: #000;
   word-break: none;
   text-align: center;
 }
 
 .nav-link:hover {
-  text-decoration: none;
-  color: #000;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+.clothes-btn {
+  text-align: center;
+  font-size: xx-large;
+  width: 25%;
+  height: 13em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.clothes-btn:hover {
+  background-color: #e0c2ac;
+  color: white;
 }
 
 .hero {
@@ -19,23 +42,33 @@
 }
 
 .centered {
-  font-size: 39px;
+  font-size: 42px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -175%);
+  transform: translate(-50%, -375%);
   color: #fff;
   text-align: center;
 }
+
 .bg-beige {
   background-color: #e0c2ac;
+  color: white;
+  font-size: large;
 }
+
+.bg-beige:hover {
+  background-color: #caab95;
+  color: white;
+  font-size: large;
+}
+
 .centered1 {
-  font-size: 50px;
+  font-size: 45px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -200%);
   color: #fff;
   text-align: center;
   word-break: none;
@@ -47,14 +80,19 @@
   height: auto;
 }
 
+/* Mobile-friendly code */
 @media (max-width: 768px) {
-  .centered {
-    font-size: 30px;
+  .container {
     text-align: center;
+    padding: auto;
   }
-  .centered1 {
-    word-break: none;
-    text-align: center;
-    font-size: 25px;
+
+  .col-md-3 {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .card {
+    margin: 0 auto;
   }
 }
