@@ -39,6 +39,7 @@
   margin: auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
+  height: 400px;
 }
 
 .centered {
@@ -46,7 +47,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -375%);
+  transform: translate(-50%, 20%);
   color: #fff;
   text-align: center;
 }
@@ -57,7 +58,7 @@
   font-size: large;
 }
 
-.bg-beige:hover {
+.beige-btn:hover {
   background-color: #caab95;
   color: white;
   font-size: large;
@@ -68,7 +69,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -200%);
+  transform: translate(-50%, 75%);
   color: #fff;
   text-align: center;
   word-break: none;
@@ -76,23 +77,54 @@
 }
 
 .hero img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 /* Mobile-friendly code */
 @media (max-width: 768px) {
-  .container {
-    text-align: center;
-    padding: auto;
+  .centered {
+    top: 10%;
+    transform: translate(-50%, 20%);
   }
 
-  .col-md-3 {
-    width: 100%;
-    margin-bottom: 1em;
-  }
-
-  .card {
-    margin: 0 auto;
+  .centered1 {
+    font-size: xx-large;
+    top: 15%;
+    transform: translate(-50%, 75%);
   }
 }
+
+:root {
+  --beige: #e0c2ac;
+}
+
+.clothes-btn-container {
+  text-align: center;
+  margin: 0 auto;
+  /* Center the buttons horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clothes-btn {
+  text-align: center;
+  font-size: xx-large;
+  width: 25%;
+  height: 13em;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.clothes-btn:hover {
+  background-color: var(--beige);
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .clothes-btn {
+    width: 100%;
+  }
+}
+
