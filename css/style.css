@@ -127,4 +127,15 @@
     width: 100%;
   }
 }
+@media (max-width: 576px) {
+  .card {
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+}
+
 
