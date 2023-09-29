@@ -1,0 +1,60 @@
+.nav-link {
+  font-size: x-large;
+  color: #000;
+  word-break: none;
+  text-align: center;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.hero {
+  background-image: url(/src/Banner.jpg);
+  color: #fff;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.centered {
+  font-size: 39px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -175%);
+  color: #fff;
+  text-align: center;
+}
+.bg-beige {
+  background-color: #e0c2ac;
+}
+.centered1 {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  word-break: none;
+  white-space: nowrap;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .centered {
+    font-size: 30px;
+    text-align: center;
+  }
+  .centered1 {
+    word-break: none;
+    text-align: center;
+    font-size: 25px;
+  }
+}
