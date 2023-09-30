@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./src/Logo-rd.ico" type="image/x-icon">
    </head>
-<body>
+<body class="bg-beige">
   <nav class="navbar navbar-expand-lg navbar-light bg-beige">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html"><img src="./src/Logo.png" width="85px" style="border-radius: 99em;"></a>
@@ -21,7 +21,7 @@
             <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="./shop.html">Shop</a>
+            <a class="nav-link" href="./shop.html">Shop</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./about.html">About Us</a>
@@ -29,20 +29,39 @@
           <li class="nav-item">
             <a class="nav-link" href="./signin.html">Sign In</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="./signup.html">Sign Up</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <br>
-  <p class="jumbotron">Shop By Item</p>
-  <div style="text-align: center;">
-    <a href="./hoodies.html"><button class="btn clothes-btn">Hoodies <br> <img class="hoodie-img" src="./src/Hoodie-tp.png" alt=""></button></a>
-    <a href="./sweatpants.html"><button class="btn clothes-btn">Sweatpants <br> <img class="Sweatpants" src="./src/Sweatpants-tp.png" alt=""></button></button></a>
-   </div>
-<script src="./js/.js"></script>
-<script src="./js/bootstrap.bundle.js"></script>
+
+  <div class="form">
+    <br>
+    <h2 style="font-weight: bolder;">
+        Welcome To <br> <span class="beige-txt">CalmCotton</span> 
+    </h1>
+    <br>
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input placeholder="Type Email Here" type="email" class="form-control" id="InputEmail">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input placeholder="Type Password Here" type="password" class="form-control" id="InputPassword">
+        </div>
+        <button type="submit" style="width: 100%; margin-top: 0.75em;" class="btn beige-btn">Sign In</button>
+      </form>
+      <br>
+      <p>
+        if You Already Have An Account Click <a href="./signin.html" class="beige-txt" style="text-decoration: none;">Here</a> To Sign In
+      </p>
+      <br>
+    </div>
+    <br>
+    <br>
+    <script src="./js/bootstrap.bundle.js"></script>
   </body>
   </html>

@@ -1,3 +1,31 @@
+.beige-txt{
+  color: #e0c2ac;
+}
+.beige-txt:hover{
+  color: #caab95;
+}
+
+input{
+  height: 2.5em;
+  width: 18em;
+  text-align: center;
+  font-size: larger;
+}
+.form{
+    margin: auto;
+    text-align: center;
+    border:inline;
+    border-radius: 2em;
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 75%;
+    color: #000;
+}
+.form-p{
+  font-size: larger;
+}
+
 .jumbotron {
   text-align: center;
   font-size: xxx-large;
@@ -58,6 +86,12 @@
   font-size: large;
 }
 
+.beige-btn {
+  background-color: #e0c2ac;
+  color: white;
+  font-size: large;
+}
+
 .beige-btn:hover {
   background-color: #caab95;
   color: white;
@@ -70,6 +104,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, 75%);
+  color: #fff;
+  text-align: center;
+  word-break: none;
+  white-space: nowrap;
+}
+
+.centered-btn {
+  font-size: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 105%);
   color: #fff;
   text-align: center;
   word-break: none;
@@ -92,6 +138,11 @@
     font-size: xx-large;
     top: 15%;
     transform: translate(-50%, 95%);
+  }
+  .centered-btn {
+    font-size: xx-large;
+    top: 15%;
+    transform: translate(-50%, 45%);
   }
 }
 
